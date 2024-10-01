@@ -33,6 +33,11 @@ def char_count(chars):
 def main():
     booktext = get_book()
     char_list = char_split(booktext)
-    print(char_count(char_list))
+    num_words = word_count(booktext)
+    char_dict = char_count(char_list)
+    print("--- Begin report of books/frankenstein.txt ---")
+    print(num_words," words found in the document")
+    for char_key in char_dict:
+        print("the ",char_key," character was found ",char_dict[char_key], "times")
 
 main()
