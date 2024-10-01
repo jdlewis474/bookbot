@@ -17,7 +17,7 @@ def char_split(text):
     chars = []
     for word in nested_chars:
         for char in word:
-            chars.append(char)
+            chars.append(char.lower())
     return chars
 
 def char_count(chars):
