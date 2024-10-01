@@ -1,7 +1,8 @@
 def get_book():
-    with open("books/frankenstein.txt") as frank_book:
-        frank_txt = frank_book.read()
-        return frank_txt
+    book_path = str(input("Please input file path to book: \n"))
+    with open(book_path) as book:
+        book_txt = book.read()
+        return book_txt
 
 def print_book(text):
     print(text)
